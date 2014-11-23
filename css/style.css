@@ -1,0 +1,128 @@
+body{
+				font:16px/24px Arial, Helvetica, sans-serif;
+				}
+				
+				.page{
+					overflow-x:hidden; 
+					position:relative; 
+					}
+				
+				.wrapper{
+					position:relative;
+					top:0;
+					-webkit-transition: ease 0.5s;
+					-moz-transition: ease 0.5s;
+					-o-transition: ease 0.5s;
+					transition: ease 0.5s;
+					}
+			
+					.wrapper.pushed{
+						-webkit-transform: translateX(-200px);
+						-moz-transform: translateX(-200px);
+						-ms-transform: translateX(-200px);
+						-o-transform: translateX(-200px);
+						transform: translateX(-200px);
+						}
+					
+					.menuTrigger {
+						position: absolute;
+						right: 20px;
+						top: 20px;
+						padding: 10px 10px;
+						background: #F15F48;
+						cursor: pointer;
+               color:#fff;
+               font-weight:bold;
+						}	
+			
+			.container{
+				max-width:960px;
+				padding:30px;
+				margin:0 auto;
+				}
+				
+				.container h1{
+					margin-top:20px;
+					font-size:24px;
+					font-weight:bold;
+					}	
+				
+				.container p{
+					margin-top:20px;
+					}
+
+          .container p.box{
+            background-color:#00B4AB;
+            padding:10px;
+				  color:#fff;
+            font-weight:bold;
+					}
+
+          .container p span{
+					font-weight:bold;
+					}
+					
+			.panel, .subPanel {
+			  width: 200px;
+			  background:#F8F7F2;
+			  position: absolute;
+			  height:100%;
+			  top: 0;
+			  bottom: 0;
+			  right: -200px;
+			  -webkit-transition: ease 0.5s;
+			  -moz-transition: ease 0.5s;
+			  -o-transition: ease 0.5s;
+			  transition: ease 0.5s;
+			  overflow:hidden;
+			}
+			
+				.panel{
+					z-index:10;
+					border-left:1px solid #F2F0E8;
+					}
+				
+					.panel ul li{
+						width: 180px;
+						padding:10px;
+						border-bottom: 1px solid #F2F0E8;
+						color:#F15F48;
+						cursor: pointer;
+						}
+					
+					.panel ul li:hover {
+						background: #F15F48;
+						color: #fff;
+						}
+						
+						.panel ul li ul li{
+							color:#00B4AB;
+							}
+						
+						.panel ul li ul li:hover{
+							background:#00B4AB;
+							color:#fff;
+							}
+					
+			
+					.panel.isOpen, .subPanel.isOpen {
+						-webkit-transform: translateX(-200px);
+						-moz-transform: translateX(-200px);
+						-ms-transform: translateX(-200px);
+						-o-transform: translateX(-200px);
+						transform: translateX(-200px);
+						}
+					
+				.subPanel{
+					z-index:20;
+					}
+			
+				.subPanel .heading {
+		  		background: #F15F48;
+		  		color: #fff;
+				  font-weight:bold;
+					}
+		
+		.closeSubPanel, .closePanel, .openSubPanel {
+		  cursor: pointer;
+		}
